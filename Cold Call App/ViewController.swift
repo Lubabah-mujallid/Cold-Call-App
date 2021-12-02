@@ -12,10 +12,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: Any) {
-        if call.currentCaller < Call.people.count - 1 {
-            call.nextCaller()
-        }
-        else { call.currentCaller = 0 }
+        call.nextCaller()
         updateUI()
     }
     
