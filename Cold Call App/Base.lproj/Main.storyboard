@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cold_Call_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID5-LY-cox">
-                                <rect key="frame" x="256" y="1090" width="512" height="43"/>
+                                <rect key="frame" x="107" y="636" width="214" height="43"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
@@ -35,8 +35,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-JC-ipu">
-                                <rect key="frame" x="382.5" y="112" width="259" height="82.5"/>
+                                <rect key="frame" x="84.666666666666686" y="194" width="259" height="82.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="69"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vU-lm-rDs">
+                                <rect key="frame" x="169" y="415.33333333333331" width="90" height="95.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="POo-F1-wRg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,20 +53,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8vU-lm-rDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0DO-Kx-ErR"/>
                             <constraint firstItem="ID5-LY-cox" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4A9-w6-rKg"/>
                             <constraint firstItem="ID5-LY-cox" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="8JZ-hT-oot"/>
                             <constraint firstItem="6qC-JC-ipu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jqx-aK-D2G"/>
-                            <constraint firstItem="6qC-JC-ipu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="QL2-yS-Q9p"/>
+                            <constraint firstItem="6qC-JC-ipu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="QL2-yS-Q9p"/>
+                            <constraint firstItem="8vU-lm-rDs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fvh-5i-4Xq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ID5-LY-cox" secondAttribute="bottom" constant="213" id="oT4-7R-c0z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="6qC-JC-ipu" id="Aec-7i-n9W"/>
+                        <outlet property="numLabel" destination="8vU-lm-rDs" id="4OT-rz-Rx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+            <point key="canvasLocation" x="-23.831775700934578" y="67.386609071274307"/>
         </scene>
     </scenes>
     <resources>
